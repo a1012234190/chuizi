@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../iconfont/logon-download/iconfont.css">
+    <script src="../js/captcha.js"></script>
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/md5.js"></script>
+    
+</head>
+
+<body>
+    <div id="logon-wrap">
+        <div class="logon-top">
+            <h4>使用 Smartisan ID 登录官网</h4>
+        </div>
+        <div class="logon-bottom">
+            <ul class="common-from">
+                <li class="form-item">
+                    <span><i class="iconfont">用户名</i></span>
+                    <input type="text" placeholder="2~6位字母区分大小写" id="usernameID">
+                    <p class="form-group_mssage"></p>
+                </li>
+                <li class="form-item">
+                    <span><i class="iconfont">手机号码</i></span>
+                    <input type="text" id="phoneID" placeholder="手机号码">
+                    <p class="form-group_mssage"></p>
+                </li>
+                <li class="form-item">
+                    <span><i class="iconfont">设置密码</i></span>
+                    <input type="text" id="passwordA" placeholder="大小写字母和数字">
+                    <p class="form-group_mssage"></p>
+                </li>
+                <li class="form-item">
+                    <span><i class="iconfont">确认密码</i></span>
+                    <input type="text" id="passwordB" placeholder="密码请保持一致">
+                    <p class="form-group_mssage"></p>
+                </li>
+                <li class="verify-num form-item">
+                    <span><i class="iconfont">验证码</i></span>
+                    <input type="text" placeholder="请输入验证码" id="imageCode">
+                    <p class="form-group_mssage"></p>
+                    <canvas id="captcha"></canvas>
+
+                </li>
+
+            </ul>
+            <div class="buttom-log">
+                <input type="button" value="注册" id="megisterBtn">
+            </div>
+            <div class="qita">
+                <h6>其他账号登录:</h6>
+                <a href="#" class="iconfont">&#xe62b</a>
+                <a href="#" class="iconfont">&#xe653</a>
+                <a href="#" class="iconfont">&#xe62f</a>
+                <a href="#" class="iconfont">&#xe802</a>
+                <span><a href="./login.html">普通登录 ></a></span>
+            </div>
+            <hr>
+            <h5>登录代表你已同意 <a href="#">用户协议</a> 和 <a href="#">隐私政策</a></h5>
+        </div>
+    </div>
+</body>
+
+</html>

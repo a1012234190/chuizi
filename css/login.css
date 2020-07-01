@@ -1,0 +1,134 @@
+@charset "uft-8";
+body{
+    color: #666;
+    background: #ededed;
+}
+#logon-wrap{
+    width: 450px;
+    height: 620px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -225px;
+    background: #fff;
+/* 阴影 */
+    box-shadow: 0 9px 30px -6px rgba(0,0,0,.2), 0 18px 20px -10px rgba(0,0,0,.04), 0 18px 20px -10px rgba(0,0,0,.04), 0 10px 20px -10px rgba(0,0,0,.04); 
+}
+
+.logon-top{
+    width: 450px;
+    height: 92px;
+    margin: 23px 0 50px;
+    padding: 75px 0 0;
+    background-image: url(../img/logon.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+.logon-top h4{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1em;
+}
+.logon-bottom{
+    width: 100%;
+    padding: 0 40px 22px;
+    width: 370px;
+    /* box-sizing: border-box; */
+}
+.common-from li{
+    margin-bottom: 15px;
+    border: #ccc solid 1px;
+    border-radius: 6px;
+    height: 46px;
+    line-height: 46px;
+    opacity: .618;
+}
+.common-from li span{
+    border-radius: 6px 0 0 6px;
+    border-right: solid 1px #ccc;
+    float: left;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    margin-right: 10px;
+}
+.common-from li span i{
+   font-size: 24px;
+}
+.common-from input{
+    font-size: 20px;
+    width: 286px;
+}
+.common-from li:hover{
+    opacity: 1;
+}
+.buttom-log{
+    opacity: 1;
+    background: linear-gradient(#6f97e5,#527ed9);;
+    border: none;
+    text-align: center;
+}
+.buttom-log input{
+    background: linear-gradient(#6f97e5,#527ed9);
+    color: #fff;
+    font-size: 25px;
+}
+/* 其他登录 */
+.qita{
+    position: relative;
+}
+.qita h6{
+    display: inline;
+    margin-right: 10px;
+}
+.qita a{
+    margin-right: 5px;
+    color: #666;
+}
+.qita span{
+    position: absolute;
+    right: 0;
+}
+.qita a:nth-of-type(1):hover{
+    color: rgb(12, 180, 12);
+}
+.qita a:nth-of-type(2):hover{
+    color: rgb(207, 22, 47);
+}
+.qita a:nth-of-type(3):hover{
+    color: rgb(12, 180, 12);
+}
+.qita a:nth-of-type(4):hover{
+    color: rgb(34, 116, 224);
+}
+.qita span a:hover{
+    color: gray !important;
+}
+/* 水平线 */
+.logon-bottom hr{
+    width: 100%;
+    height: 1px;
+    color: #666;
+    opacity: .3;
+    margin:30px 0;
+}
+.logon-bottom h5{
+    width: 100%;
+    text-align: center;
+}
+.logon-bottom h5 a{
+    color: #666;
+}
+
+.logon-bottom h5 a:hover{
+    color: skyblue;
+}

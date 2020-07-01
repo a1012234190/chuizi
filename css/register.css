@@ -1,0 +1,174 @@
+@charset "uft-8";
+body{
+    color: #666;
+    background: #ededed;
+}
+#logon-wrap{
+    width: 450px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    position: relative;
+    top: 18px;
+    margin: auto;
+    background: #fff;
+/* 阴影 */
+    box-shadow: 0 9px 30px -6px rgba(0,0,0,.2), 0 18px 20px -10px rgba(0,0,0,.04), 0 18px 20px -10px rgba(0,0,0,.04), 0 10px 20px -10px rgba(0,0,0,.04); 
+    padding: 0 150px;
+}
+
+.logon-top{
+    width: 450px;
+    height: 92px;
+    margin: 23px 0 50px;
+    padding: 75px 0 0;
+    background-image: url(../img/logon.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+.logon-top h4{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1em;
+}
+.logon-bottom{
+    width: 100%;
+    padding: 0 25px 22px;
+    width: 426px;
+    /* box-sizing: border-box; */
+}
+.common-from li{
+    margin-bottom: 30px;
+    border: #ccc solid 1px;
+    border-radius: 6px;
+    height: 53px;
+    opacity: .618;
+}
+.common-from li span{
+    border-radius: 6px 0 0 6px;
+    border-right: 1px solid #ccc;
+    float: left;
+    height: 100%;
+    width: 80px;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 46px;
+}
+.common-from li span i{
+   font-size: 18px;
+   font-weight: 600;
+}
+.common-from input{
+    font-size: 20px;
+    width: 286px;
+    height: 100%;
+}
+.common-from li:hover{
+    opacity: 1;
+}
+.buttom-log{
+    opacity: 1;
+    background: linear-gradient(#6f97e5,#527ed9);;
+    border: none;
+    text-align: center;
+    width: 350px ;
+    margin: 10px auto ;
+    border-radius: 18px ;
+}
+.buttom-log input{
+    background: linear-gradient(#6f97e5,#527ed9);
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+    border-radius: 18px ;
+    
+}
+.verify-num{
+    width: 250px;
+    position: relative;
+}
+.verify-num input{
+    width: 144px;
+}
+.form-group_mssage{
+    display: inline-block;
+    font-size: 12px;
+    color: #c33
+}
+.form-group-error{
+    /* border: 1px solid red !important; */
+    border-color: red !important;
+}
+#captcha{
+    width: 165px;
+    height: 93px;
+    background-color: sandybrown;
+    position: absolute;
+    right: -176px;
+    top: -18px;
+}
+
+
+
+
+
+
+
+
+
+/* 其他登录 */
+.qita{
+    position: relative;
+}
+.qita h6{
+    display: inline;
+    margin-right: 10px;
+}
+.qita a{
+    margin-right: 5px;
+    color: #666;
+}
+.qita span{
+    position: absolute;
+    right: 0;
+}
+.qita a:nth-of-type(1):hover{
+    color: rgb(12, 180, 12);
+}
+.qita a:nth-of-type(2):hover{
+    color: rgb(207, 22, 47);
+}
+.qita a:nth-of-type(3):hover{
+    color: rgb(12, 180, 12);
+}
+.qita a:nth-of-type(4):hover{
+    color: rgb(34, 116, 224);
+}
+.qita span a:hover{
+    color: gray !important;
+}
+/* 水平线 */
+.logon-bottom hr{
+    width: 100%;
+    height: 1px;
+    color: #666;
+    opacity: .3;
+    margin:30px 0;
+}
+.logon-bottom h5{
+    width: 100%;
+    text-align: center;
+}
+.logon-bottom h5 a{
+    color: #666;
+}
+
+.logon-bottom h5 a:hover{
+    color: skyblue;
+}

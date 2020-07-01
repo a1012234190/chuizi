@@ -1,0 +1,101 @@
+/* banner */
+#banner{
+    margin-top: 30px;
+}
+.slider {
+    margin: 0 auto;
+    width: 1220px;
+    height: 554px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-box {
+    background: #dddddd;
+    width: 10000px;
+    height: 554px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.slider-box-item {
+    width: 1220px;
+    height: 554px;
+    float: left;
+}
+
+.slider-box-item img {
+    width: 1220px;
+    height: 554px;
+}
+
+.slider-nav {
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    height: 30px;
+    bottom: 0;
+}
+
+.slider-nav-item {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgb(111, 87, 87);
+    float: left;
+    border-radius: 15px;
+    margin: 0 5px;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    line-height: 30px;
+}
+
+.active {
+    background: #fff;
+}
+
+/* goods-one */
+.advert{
+    height: 199px;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.advert li img{
+    width: 100%;
+    height: 100%;
+}
+.advert li{
+    float: left;
+    width: 304px;
+    height: 198px;
+    position: relative;
+    text-align: center;
+}
+.advert1 img{
+    border-radius: 10px 0 0 10px;
+}
+.advert4 img{
+    border-radius: 0 10px 10px 0;
+}
+.advert a{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.advert a:hover{
+    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+}
+
+
+
+
+
+
