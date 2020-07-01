@@ -1,9 +1,4 @@
 $(() => {
-    $("#phoneID").val(13926291888);
-    $("#usernameID").val("zs");
-    $("#passwordA").val(123);
-    $("#passwordB").val(123);
-
     let imgCode;
     /*不传值，统一走默认值*/
     let captcha = new Captcha({
