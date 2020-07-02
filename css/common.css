@@ -38,16 +38,22 @@ body{
 
 
 /* 共同商品盒子 */
-/* <div class="goods-list">
+/* 
+<div class="goods-list">
 <div class="goods-list-Top">
     <h2>热门商品</h2>
+    <div class="goods-footer clear_fix">
+    
+    </div>
 </div>
-
-</div> */
+</div>
+ */
 .goods-list{
+    width: 1216px !important;
     margin-top: 25px;
     border-radius: 10px;
     border:1px solid rgb(209, 207, 207);
+    overflow: hidden;
 }
 .goods-list-Top{
     width: 100%;
@@ -65,7 +71,7 @@ body{
 }
 .goods-list-Bottom{
     border-radius: 0 0 10px 10px;
-    width: 100%;
+    width: 1220px;
 }
 
 
@@ -80,10 +86,20 @@ body{
         <em>￥3,199.00</em>
         <span>直降</span>
         </div> */
-.goods-active{
+.goods-list-Bottom{
     float: left;
-    width: 305px;
+    width: 303px;
     height: 429px;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+.goods-list-Bottom:hover .goods-active{
+    box-shadow: inset 1px -3px 12px 0px rgba(0,0,0,0.3);
+
+}
+.goods-active{
+    width: 303px;
+    height: 100%;
     background: #fff;
     text-align: center;
     position: relative;
