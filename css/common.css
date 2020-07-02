@@ -38,6 +38,12 @@ body{
 
 
 /* 共同商品盒子 */
+/* <div class="goods-list">
+<div class="goods-list-Top">
+    <h2>热门商品</h2>
+</div>
+
+</div> */
 .goods-list{
     margin-top: 25px;
     border-radius: 10px;
