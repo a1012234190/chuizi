@@ -1,13 +1,18 @@
-
-.container-top ul{
-    padding-right: 720px;
+.goodsList{
+    margin-top: 1px;
+}
+.goodsList ul{
+    height: 60px;
     width: 500px;
     background-color: #ededed;
 }
 .container-top li{
-    float: left;
-    width: 90px;
+    float: left ;
+    width: 90px ;
     height: 60px;
+}
+.container-top li:hover a{
+    color: #5683ea;
 }
 .container-top li a{
     display: inline-block;

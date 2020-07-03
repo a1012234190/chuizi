@@ -31,7 +31,7 @@ body{
 }
 
 /* 版心：width */
-.nav-wrap,.bottom-wrap,.advert,.goods-list,#goodsdeta-wrap,.goodsList{
+.nav-wrap,.bottom-wrap,.advert,.goods-list,#goodsdeta-wrap,.goodsList,.fenye{
     width: 1220px;
     margin: 0 auto;
 }
@@ -69,23 +69,27 @@ body{
     line-height: 60px;
     color: #666;
 }
-.goods-list-Bottom{
+/* .goods-list-Bottom{
     border-radius: 0 0 10px 10px;
     width: 1220px;
-}
+} */
 
 
 /* 共同小商品盒子 */
-        /* <div class="goods-active">
-        <img src="../img/slips-sj.png" alt="">
-        <h3>坚果Pro3</h3>
-        <p>
-            “圈铁一体代表作”
-        </p>
-        <h4>￥2,599.00</h4>
-        <em>￥3,199.00</em>
-        <span>直降</span>
-        </div> */
+        /* 
+        <div class="goods-list-Bottom">
+            <div class="goods-active">
+            <img src="../img/slips-sj.png" alt="">
+            <h3>坚果Pro3</h3>
+            <p>
+                “圈铁一体代表作”
+            </p>
+            <h4>￥2,599.00</h4>
+            <em>￥3,199.00</em>
+            <span>直降</span>
+            </div> 
+         </div>
+        */
 .goods-list-Bottom{
     float: left;
     width: 303px;
@@ -95,7 +99,6 @@ body{
 }
 .goods-list-Bottom:hover .goods-active{
     box-shadow: inset 1px -3px 12px 0px rgba(0,0,0,0.3);
-
 }
 .goods-active{
     width: 303px;

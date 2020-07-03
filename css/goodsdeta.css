@@ -131,12 +131,17 @@
 .goodsdeta-right div:nth-child(5) span{
     float: left;
 }
-/* 
-#tuijian{
-    width: 1220px;
-    margin: 0 auto;
-    font-size: 24px;
-    font-weight: 700;
-    color: #333;
-    padding: 60px 0;
-} */
+
+.goodsdeta-right button{
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #6383c6;
+    color: #fff;
+    line-height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 52px;
+    border: none;
+    outline: none;
+}
