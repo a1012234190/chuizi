@@ -31,7 +31,7 @@ body{
 }
 
 /* 版心：width */
-.nav-wrap,.bottom-wrap,.advert,.goods-list{
+.nav-wrap,.bottom-wrap,.advert,.goods-list,#goodsdeta-wrap,.goodsList{
     width: 1220px;
     margin: 0 auto;
 }

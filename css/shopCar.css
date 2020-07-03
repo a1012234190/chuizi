@@ -2,6 +2,10 @@
 .check{ 
     display: none;
     z-index: 100;
+
+    position: absolute;
+    left: 26px;
+    top: 34px;
 }
 .label{
     display: inline-block;
@@ -14,6 +18,10 @@
     font-size: 14px;
     color: #e4e3e3;
     z-index: 99;
+
+    position: absolute;
+    left: 26px;
+    top: 34px;
 }
 
 .type-row{
@@ -41,20 +49,9 @@ button{
     position: relative;
     font-size: 14px;
     color: #666666;
-}
-/* checkbox  圆形*/
+    border-bottom: 1px solid #d9d9d9;
 
-#check1{
-    position: absolute;
-    left: 26px;
-    top: 48px;
 }
-#label1{
-    position: absolute;
-    left: 26px;
-    top: 48px;
-}
-
 
 .goods-from{
     padding-left: 74px;
@@ -93,19 +90,17 @@ button{
 }
 .goods-num{
     position: absolute;
-    right: 284px;
+    right: 300px;
     top: 16px;
     transform: translateY(-12px);
 }
-/* .jia,.jian,.shan{
-    margin-left:20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-} */
+.piece_num{
+    height: 26px;
+    width: 28px;
+    text-align: center;
+}
 .jia:hover,.jian:hover,.shan:hover{
     box-shadow: 0 -2px 16px 0 rgba(0,0,0,0.24), 0 13px 22px 0 rgba(0,0,0,0.19);
-}
-.jian{
-    margin-right: 20px;
 }
 .num-money{
     position: absolute;

@@ -1,0 +1,19 @@
+
+.container-top ul{
+    padding-right: 720px;
+    width: 500px;
+    background-color: #ededed;
+}
+.container-top li{
+    float: left;
+    width: 90px;
+    height: 60px;
+}
+.container-top li a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    color: #999999;
+    font-size: 12px;
+    line-height: 60px;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>购物车</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../iconfont/font_5kjxukuxj1j/iconfont.css">
@@ -40,87 +40,54 @@
     </div>
 
     <!-- 购物车 -->
-    <div class="goods-list">
-        <div class="goods-list-Top">
-            <h2>购物清单</h2>
-        </div>
-        <div class="type-row clear_fix">
-            <span class="float_left type-row-fontR">商品信息</span>
-            <span class="float_right">操作</span>
-            <span class="float_right">小计</span>
-            <span class="float_right">数量</span>
-            <span class="float_right">单价</span>
-        </div>
-        <div class="shopCar-center">
-            <!-- 复选框 -->
-            <label for="check1" id="label1" class="label"></label>
-            <input type="checkbox" id="check1" class="check">
-                
-            <div class="goods-from clear_fix float_left">
-                <a href="" class="clear_fix">
-                <img class="float_left" src="../img/slips-sj.png" alt="">
-                </a>
-                <span class="piece-money float_right">￥249.00</span>
-                <div class="goods-num float_right">
-                    <button class="jian">-</button>
-                    <strong class="piece_num">0</strong>
-                    <button class="jia">+</button>
-                </div>
-                <span class="num-money float_right">￥249.00</span>
-                <button class="shan float_right float_right">×</button>
+    <div class="shopCar-goods clear_fix">
+        <div class="goods-list">
+            <div class="goods-list-Top">
+                <h2>购物清单</h2>
             </div>
-        </div>
-        <div class="shopCar-center">
-            <!-- 复选框 -->
-            <label for="check1" id="label1" class="label"></label>
-            <input type="checkbox" id="check1" class="check">
-                
-            <div class="goods-from clear_fix float_left">
-                <a href="" class="clear_fix">
-                <img class="float_left" src="../img/slips-sj.png" alt="">
-                </a>
-                <span class="piece-money float_right">￥249.00</span>
-                <div class="goods-num float_right">
-                    <button class="jian">-</button>
-                    <strong class="piece_num">0</strong>
-                    <button class="jia">+</button>
-                </div>
-                <span class="num-money float_right">￥249.00</span>
-                <button class="shan float_right float_right">×</button>
+            <div class="type-row clear_fix">
+                <span class="float_left type-row-fontR">商品信息</span>
+                <span class="float_right">操作</span>
+                <span class="float_right">小计</span>
+                <span class="float_right">数量</span>
+                <span class="float_right">单价</span>
             </div>
-        </div>
-        <div class="shopCar-center">
-            <!-- 复选框 -->
-            <label for="check1" id="label1" class="label"></label>
-            <input type="checkbox" id="check1" class="check">
-                
-            <div class="goods-from clear_fix float_left">
-                <a href="" class="clear_fix">
-                <img class="float_left" src="../img/slips-sj.png" alt="">
-                </a>
-                <span class="piece-money float_right">￥249.00</span>
-                <div class="goods-num float_right">
-                    <button class="jian">-</button>
-                    <strong class="piece_num">0</strong>
-                    <button class="jia">+</button>
+            <!-- <div class="shopCar-center">
+
+                <div class="goods-from clear_fix float_left"> -->
+                    <!-- 复选框 -->
+                    <!-- <label for="check1" id="label1" class="label"></label>
+                    <input type="checkbox" id="check1" class="check">
+
+                    <a href="" class="clear_fix">
+                        <img class="float_left" src="../img/slips-sj.png" alt="">
+                    </a>
+                    <span class="piece-money float_right">￥249.00</span>
+                    <div class="goods-num float_right">
+                        <button class="jian">-</button>
+                        <input type="text" class="piece_num" value="0">
+                        <button class="jia">+</button>
+                    </div>
+                    <span class="num-money float_right">￥249.00</span>
+                    <button class="shan float_right float_right">×</button>
                 </div>
-                <span class="num-money float_right">￥249.00</span>
-                <button class="shan float_right float_right">×</button>
+            </div> -->
+
+
+            <div class="shopCar-footer">
+                <!-- 复选框 -->
+                <label for="check2-footer" class="label"></label>
+                <input type="checkbox" id="check2-footer" class="check">
+                <ul class="clear_fix">
+                    <li class="close float_right"><button>现在结算</button></li>
+                    <li class="total float_right">应付总额：<span>￥1，599.00</span></li>
+                    <li class="total-num float_right">已选择<span> 1 </span>件商品</li>
+                    <li class="quan float_left">全选</li>
+                </ul>
             </div>
-        </div>
-        
-        <div class="shopCar-footer">
-            <!-- 复选框 -->
-            <label for="check2" id="label2" class="label"></label>
-            <input type="checkbox" id="check2" class="check">
-            <ul class="clear_fix">
-                <li class="close float_right"><button>现在结算</button></li>
-                <li class="total float_right">应付总额：<span>￥1，599.00</span></li>
-                <li class="total-num float_right">已选择<span> 1 </span>件商品</li>
-                <li class="quan float_left">全选</li>
-            </ul>
         </div>
     </div>
+
 
     <!-- bottom -->
     <div id="bottom">
@@ -172,31 +139,46 @@
 </body>
 <script src="../js/jquery-3.4.1.js"></script>
 <script>
-    $(()=>{
-        $("#check1").click(function () {
-            if($("#check1")[0].checked){
-                $("#label1").html("✔");
-                $("#label1").css("background","#698ff7");
-            }else{
-                $("#label1").html("");
-                $("#label1").css("background","#fff");
-            }
-        })
-        $("#check2").click(function () {
-        console.log($("#check2")[0].checked)
-            if($("#check2")[0].checked){
+    $(() => {
+        //购物车按钮
+        $(".shopCar-goods").click(function (e) {
+            if ($(e.target).attr("type") == "checkbox") {
                 console.log("1")
-                $("#label2").html("✔");
-                $("#label2").css({
-                    background:"#698ff7",
-                    color:"red!important"
-                });
-            }else{
-                $("#label2").html("cuo");
-                $("#label2").css("background","#fff");
+                if ($(e.target)[0].checked) {
+                    $(e.target).prev().html("✔");
+                    $(e.target).prev().css("background", "#698ff7");
+                } else {
+                    $(e.target).prev().html("");
+                    $(e.target).prev().css("background", "#fff");
+                }
             }
         })
-        console.log()
+
+        //购物车生成
+        for(let i=1;i<3;i++){
+            let html = `
+            <div class="shopCar-center">
+                <div class="goods-from clear_fix float_left">
+                    <!-- 复选框 -->
+                    <label for="check${i}"  class="label"></label>
+                    <input type="checkbox" id="check${i}" class="check">
+                    <a href="" class="clear_fix">
+                        <img class="float_left" src="../img/slips-sj.png" alt="">
+                    </a>
+                    <span class="piece-money float_right">￥249.00</span>
+                    <div class="goods-num float_right">
+                        <button class="jian">-</button>
+                        <input type="text" class="piece_num" value="0">
+                        <button class="jia">+</button>
+                    </div>
+                    <span class="num-money float_right">￥249.00</span>
+                    <button class="shan float_right float_right">×</button>
+                </div>
+            `;
+            $(".type-row").after(html);
+        }
+        
+       
     })
 </script>
 
