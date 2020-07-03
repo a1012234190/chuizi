@@ -63,7 +63,6 @@ $(() => {
     })
 
     $("#megisterBtn").click(function () {
-        console.log($(this))
         $("#usernameID","#phoneID","#passwordA","#passwordB","#imageCode").trigger("blur");
 
         if($(".form-group-error").length != 0){
@@ -80,7 +79,8 @@ $(() => {
             data,
             dataType:"json",
         }).done(data =>{
-            if(data.status == "success"){
+            console.log(data);
+            if(data.status == "ok"){
                 alert("注册成功!")
             }else{
                 alert(data.msg);

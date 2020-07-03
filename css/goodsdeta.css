@@ -1,9 +1,11 @@
 @charset "uft-8";
 /* 共同样式 */
+body{
+    background: #fcfcfc;
+}
 
 #goodsdeta{
     background: #fcfcfc;
-    border-bottom: 1px solid #e8e8e8;
     padding: 20px 0;
 
 }
@@ -131,7 +133,6 @@
 .goodsdeta-right div:nth-child(5) span{
     float: left;
 }
-
 .goodsdeta-right button{
     width: 120px;
     height: 40px;

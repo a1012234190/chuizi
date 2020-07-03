@@ -143,19 +143,18 @@
             <li><a>价格高到低</a></li>
         </ul>
         <div class="goodsList-box clear_fix">
-            <div class="goods-list-Bottom">
-                <div class="goods-active">
-                    <img src="../img/slips-cdq.png" alt="">
-                    <h3>${itme.name}</h3>
-                    <p>
-                       ${itme.title}
-                    </p>
-                    <h4>${itme.price}</h4>
-                    <em>${itme.orignal_price}</em>
-                    <span>直降</span>
+                <div class="goods-list-Bottom">
+                    <div class="goods-active">
+                        <img src="../img/slips-cdq.png" alt="">
+                        <h3>${itme.name}</h3>
+                        <p>
+                            ${itme.title}
+                        </p>
+                        <h4>${itme.price}</h4>
+                        <em>${itme.orignal_price}</em>
+                        <span>直降</span>
+                    </div>
                 </div>
-            </div>
-            
         </div>
     </div>
     </div>
@@ -163,23 +162,23 @@
     <!-- 分页bootstrap -->
     <nav aria-label="Page navigation" class="fenye">
         <ul class="pagination">
-          <li>
-            <a href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li>
-            <a href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
         </ul>
-      </nav>
+    </nav>
 
     <!-- bottom -->
     <div id="bottom">
@@ -231,60 +230,58 @@
 </body>
 <script src="../js/jquery-3.4.1.js"></script>
 <!-- <script src="../js/common.js"></script> -->
+<script src="../js/render-goods.js"></script>
 <script>
     $(() => {
         $(function () {
-    //nav
-    $(window).scroll(function () {
-        if ($("body,html").scrollTop() > 45) {
-            $(".fixed-nav").css({
-                "position": "fixed",
-                "top": "0",
-                "z-index": "999"
+            //nav
+            $(window).scroll(function () {
+                if ($("body,html").scrollTop() > 45) {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "z-index": "999"
+                    })
+                    $(".goodsList").css({
+                        "margin-top": "96px"
+                    })
+                } else {
+                    $(".fixed-nav").css({
+                        "position": "relative"
+                    })
+                    $(".goodsList").css({
+                        "margin-top": "1px"
+                    })
+                }
+                if ($("body,html").scrollTop() > 45) {
+                    $(".slip-sy").css({
+                        "position": "fixed",
+                        "top": "74px",
+                        "z-index": "999"
+                    })
+                }
+                else {
+                    $(".slip-sy").css({
+                        "position": "absolute",
+                        "top": "119px"
+                    })
+                }
             })
-            $(".goodsList").css({
-                "margin-top":"96px"
+            $(".sy").mouseover(function () {
+                $(".slip-sy").css({ display: "block" })
             })
-        } else {
-            $(".fixed-nav").css({
-                "position": "relative"
+            $(".sy").mouseout(function () {
+                $(".slip-sy").css({ "display": "none" })
             })
-            $(".goodsList").css({
-                "margin-top":"1px"
+            $(".slip-sy").mouseover(function () {
+                $(this).css({ "display": "block" })
             })
-        }
-        if ($("body,html").scrollTop() > 45) {
-            $(".slip-sy").css({
-                "position": "fixed",
-                "top": "74px",
-                "z-index": "999"
+            $(".slip-sy").mouseout(function () {
+                $(this).css({ "display": "none" })
             })
-        }
-        else {
-            $(".slip-sy").css({
-                "position": "absolute",
-                "top": "119px"
-            })
-        }
-    })
-    $(".sy").mouseover(function () {
-        $(".slip-sy").css({ display: "block" })
-    })
-    $(".sy").mouseout(function () {
-        $(".slip-sy").css({ "display": "none" })
-    })
-    $(".slip-sy").mouseover(function () {
-        $(this).css({ "display": "block" })
-    })
-    $(".slip-sy").mouseout(function () {
-        $(this).css({ "display": "none" })
-    })
-})
+        })
+
     })
 </script>
 
 </html>
-
-
-
-

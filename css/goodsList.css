@@ -22,3 +22,7 @@
     font-size: 12px;
     line-height: 60px;
 }
+.goods-active h3{
+    width: 135px !important;
+    margin-left: 76px !important;
+}

@@ -1,3 +1,23 @@
+/* 绑定用户 */
+.user{
+    position: absolute;
+    top: 12px;
+    left: 370px;
+    color: hsla(0,0%,100%,.7);
+    font-size: 12px;
+
+}
+.zhuxiao{
+    font-size: 12px;
+    position: absolute;
+    top: 12px;
+    left: 428px;
+    background: none;
+    color: hsla(0,0%,100%,.7);
+}
+.zhuxiao:hover,.user:hover{
+    border-bottom: 1px solid hsla(0,0%,100%,.7);;
+}
 /* banner */
 #banner{
     margin-top: 30px;

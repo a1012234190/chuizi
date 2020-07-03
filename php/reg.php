@@ -7,7 +7,7 @@ $username = $_REQUEST["username"];
 $password = $_REQUEST["password"];
 $phone = $_REQUEST["phone"];
 
-$sql = "SELECT * FROM `user` WHERE username = '$username'";
+$sql = "SELECT * FROM `user` WHERE user_name = '$username'";
 
 $r = mysqli_query($db, $sql);
 
@@ -19,18 +19,18 @@ if($num == 1){
   
 }else{
   $sql = "INSERT INTO user " .
-    "(id,username,password,phoneID)" .
+    "(user_id,user_name,user_password,phone)" .
     "VALUES " .
     "(NULL,'$username','$password',$phone)";
-
+  // echo $sql;
   $retval = mysqli_query($db, $sql);
-
+  // echo $retval;
   if (!$retval) {
-    die('无法插入数据: ' . mysqli_error($conn));
+    die ('无法插入数据: '.mysqli_error($db));
   }
 
   /* 注意：PHP代码中不能使用``符号 */
-  echo '{"status":"success"}';
+  echo '{"status":"ok","msg":"你成功了"}';
 }
 
 ?>
