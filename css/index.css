@@ -2,7 +2,7 @@
 .user{
     position: absolute;
     top: 12px;
-    left: 370px;
+    left: 250px;
     color: hsla(0,0%,100%,.7);
     font-size: 12px;
 
@@ -11,7 +11,7 @@
     font-size: 12px;
     position: absolute;
     top: 12px;
-    left: 428px;
+    left: 356px;
     background: none;
     color: hsla(0,0%,100%,.7);
 }

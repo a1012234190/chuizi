@@ -45,7 +45,8 @@ body{
 }
 /* 1 */
 .goodsdeta-right div:nth-child(1) h2{
-    font-size: 24px;
+    font-size: 17px;
+    font-weight: 600;
     line-height: 30px;
     color: #000;
     padding: 0 0 20px;

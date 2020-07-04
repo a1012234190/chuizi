@@ -35,7 +35,7 @@
         </div>
         <div class="top-right float_right">
             <a href="#" class="top-user iconfont">&#xe60e</a>
-            <a href="#" class="top-cart iconfont">&#xf0179</a>
+            <a href="http://baidu.com" class="top-cart iconfont">&#xf0179</a>
         </div>
     </div>
 
@@ -138,6 +138,7 @@
     </div>
 </body>
 <script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/shopCar.js"></script>
 <script>
     $(() => {
         //购物车按钮
@@ -155,28 +156,28 @@
         })
 
         //购物车生成
-        for(let i=1;i<3;i++){
-            let html = `
-            <div class="shopCar-center">
-                <div class="goods-from clear_fix float_left">
-                    <!-- 复选框 -->
-                    <label for="check${i}"  class="label"></label>
-                    <input type="checkbox" id="check${i}" class="check">
-                    <a href="" class="clear_fix">
-                        <img class="float_left" src="../img/slips-sj.png" alt="">
-                    </a>
-                    <span class="piece-money float_right">￥249.00</span>
-                    <div class="goods-num float_right">
-                        <button class="jian">-</button>
-                        <input type="text" class="piece_num" value="0">
-                        <button class="jia">+</button>
-                    </div>
-                    <span class="num-money float_right">￥249.00</span>
-                    <button class="shan float_right float_right">×</button>
-                </div>
-            `;
-            $(".type-row").after(html);
-        }
+        // for(let i=1;i<3;i++){
+        //     let html = `
+        //     <div class="shopCar-center">
+        //         <div class="goods-from clear_fix float_left">
+        //             <!-- 复选框 -->
+        //             <label for="check${i}"  class="label"></label>
+        //             <input type="checkbox" id="check${i}" class="check">
+        //             <a href="" class="clear_fix">
+        //                 <img class="float_left" src="../img/slips-sj.png" alt="">
+        //             </a>
+        //             <span class="piece-money float_right">￥249.00</span>
+        //             <div class="goods-num float_right">
+        //                 <button class="jian">-</button>
+        //                 <input type="text" class="piece_num" value="0">
+        //                 <button class="jia">+</button>
+        //             </div>
+        //             <span class="num-money float_right">￥249.00</span>
+        //             <button class="shan float_right float_right">×</button>
+        //         </div>
+        //     `;
+        //     $(".type-row").after(html);
+        // }
         
        
     })
