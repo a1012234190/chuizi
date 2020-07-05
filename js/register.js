@@ -26,7 +26,7 @@ $(() => {
 
     let options = {
         "usernameID": {
-            reg: `/^[a-zA-Z]{2,6}$/.test(val)`,
+            reg: `/^[a-zA-Z1-9]{2,6}$/.test(val)`,
             msg: "用户名不规范"
         },
         "phoneID": {
