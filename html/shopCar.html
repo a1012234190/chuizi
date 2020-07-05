@@ -52,11 +52,12 @@
                 <span class="float_right">数量</span>
                 <span class="float_right">单价</span>
             </div>
-            <!-- <div class="shopCar-center">
-
+            <div class="goods-box">
+                <!--
+            <div class="shopCar-center">
                 <div class="goods-from clear_fix float_left"> -->
-                    <!-- 复选框 -->
-                    <!-- <label for="check1" id="label1" class="label"></label>
+                <!-- 复选框 -->
+                <!-- <label for="check1" id="label1" class="label"></label>
                     <input type="checkbox" id="check1" class="check">
 
                     <a href="" class="clear_fix">
@@ -72,16 +73,16 @@
                     <button class="shan float_right float_right">×</button>
                 </div>
             </div> -->
-
+            </div>
 
             <div class="shopCar-footer">
                 <!-- 复选框 -->
-                <label for="check2-footer" class="label"></label>
-                <input type="checkbox" id="check2-footer" class="check">
+                <!-- <label for="check2-footer" class="label"></label> -->
+                <input data="check-footer" type="checkbox" id="check2-footer" class="check">
                 <ul class="clear_fix">
                     <li class="close float_right"><button>现在结算</button></li>
-                    <li class="total float_right">应付总额：<span>￥1，599.00</span></li>
-                    <li class="total-num float_right">已选择<span> 1 </span>件商品</li>
+                    <li class="total float_right">应付总额：￥<span class="total-money">0</span></li>
+                    <li class="total-num float_right">已选择<span> 0 </span>件商品</li>
                     <li class="quan float_left">全选</li>
                 </ul>
             </div>
@@ -144,7 +145,6 @@
         //购物车按钮
         $(".shopCar-goods").click(function (e) {
             if ($(e.target).attr("type") == "checkbox") {
-                console.log("1")
                 if ($(e.target)[0].checked) {
                     $(e.target).prev().html("✔");
                     $(e.target).prev().css("background", "#698ff7");
@@ -178,8 +178,8 @@
         //     `;
         //     $(".type-row").after(html);
         // }
-        
-       
+
+
     })
 </script>
 

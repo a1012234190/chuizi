@@ -1,8 +1,8 @@
 /*复选框样式 */
 .check{ 
-    display: none;
+    /* display: none; */
+    border: 1px solid red;
     z-index: 100;
-
     position: absolute;
     left: 26px;
     top: 34px;

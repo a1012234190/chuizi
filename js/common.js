@@ -38,4 +38,8 @@ $(function () {
     $(".slip-sy").mouseout(function () {
         $(this).css({ "display": "none" })
     })
+
+    $(".top-left i").click(function () {
+        location.href("./index.html")
+    })
 })
